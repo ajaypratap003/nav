@@ -86,7 +86,7 @@ module.exports = (env = { streamsPort: 3001 }, argv) => {
         },
       }),
       new HtmlWebpackPlugin({
-        template: "./public/index.html",
+        template: "./src/index.html",
       }),
     ],
   });
