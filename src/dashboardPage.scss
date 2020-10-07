@@ -1,0 +1,57 @@
+@import "@patternfly/patternfly/sass-utilities/all.scss";
+
+.pf-c-page__sidebar {
+  // display: none;
+}
+
+.app__landing-card {
+  &.pf-c-card {
+    --pf-c-card--child--PaddingTop: var(--pf-global--spacer--xl);
+    --pf-c-card--child--PaddingRight: var(--pf-global--spacer--xl);
+    --pf-c-card--child--PaddingBottom: var(--pf-global--spacer--xl);
+    --pf-c-card--child--PaddingLeft: var(--pf-global--spacer--xl);
+  }
+
+  height: 100%;
+
+  .pf-c-card__title .pf-c-title {
+    font-weight: var(--pf-global--FontWeight--semi-bold);
+  }
+
+  .pf-c-card__footer .pf-c-button {
+    --pf-c-button__icon--m-end--MarginLeft: var(--pf-global--spacer--md);
+  }
+}
+
+.pf-c-page__main-section.pf-m-center {
+  align-content: center;
+}
+
+.app__landing-card-logo {
+  height: #{pf-size-prem(80px)};
+  width: auto;
+}
+
+.pf-m-color-400 {
+  color: var(--pf-global--Color--400);
+}
+
+.app__link-list {
+  --app__link-list--MinMax--min: 10ch;
+
+  display: grid;
+  column-gap: var(--pf-global--spacer--md);
+  row-gap: var(--pf-global--spacer--sm);
+
+  .pf-c-button {
+    white-space: normal;
+  }
+
+  &.pf-m-auto-col {
+    grid-template-columns: repeat(auto-fit, minmax(var(--app__link-list--MinMax--min), 1fr));
+  }
+
+  &.pf-m-2-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
