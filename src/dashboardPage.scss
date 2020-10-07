@@ -15,7 +15,7 @@
   height: 100%;
 
   .pf-c-card__title .pf-c-title {
-    font-weight: var(--pf-global--FontWeight--semi-bold);
+    // font-weight: var(--pf-global--FontWeight--normal);
   }
 
   .pf-c-card__footer .pf-c-button {
@@ -28,7 +28,7 @@
 }
 
 .app__landing-card-logo {
-  height: #{pf-size-prem(80px)};
+  height: #{pf-size-prem(56px)};
   width: auto;
 }
 
