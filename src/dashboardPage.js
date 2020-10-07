@@ -57,22 +57,22 @@ export const DashboardPage = () => {
             <CardBody>
               <ul className="app__link-list">
                 <li>
-                  <Button component="a" href="#" variant="link" isInline>
+                  <Button component="a" href="#/services/streams" variant="link" isInline>
                     OpenShift Streams
                   </Button>
                 </li>
                 <li>
-                  <Button component="a" href="#" variant="link" isInline>
+                  <Button component="a" href="#/services/debezium" variant="link" isInline>
                     Change date capture
                   </Button>
                 </li>
                 <li>
-                  <Button component="a" href="#" variant="link" isInline>
+                  <Button component="a" href="#/services/kafkaconnect" variant="link" isInline>
                     Camel Kafka connect
                   </Button>
                 </li>
                 <li>
-                  <Button component="a" href="#" variant="link" isInline>
+                  <Button component="a" href="#/services/threescale" variant="link" isInline>
                     OpenShift Cluster Manager
                   </Button>
                 </li>
@@ -80,10 +80,12 @@ export const DashboardPage = () => {
             </CardBody>
             <CardFooter>
               <Button
-                variant="link"
                 icon={<ArrowRightIcon />}
                 iconPosition="right"
+                variant="link"
                 isInline
+                component="a"
+                href="#"
               >
                 Open
               </Button>
