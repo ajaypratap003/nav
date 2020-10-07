@@ -18,7 +18,7 @@ const Sidebar = ({ routes }) => {
   const { pathname } = useLocation();
   const split = pathname.replace(/\/$/, '').split('/');
   const apiName = split.length > 1 ? split[split.length - 1] : null;
-  
+
   const groupedRoutes = routes
     .filter(({ group }) => Boolean(group))
     .reduce((acc, cur) => {

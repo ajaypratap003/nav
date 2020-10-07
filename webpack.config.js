@@ -28,7 +28,7 @@ module.exports = (env = { streamsPort: 3001 }, argv) => {
     output: {
       publicPath
     },
-    module: { 
+    module: {
       rules: [
         {
           test: /\.jsx?$/,

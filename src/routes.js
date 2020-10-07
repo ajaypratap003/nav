@@ -1,4 +1,5 @@
 import { StreamsPage, DebeziumPage } from 'streams/pages';
+import { DashboardPage } from './dashboardPage';
 
 const TODOComponent = () => 'Nothing yet';
 
@@ -6,7 +7,7 @@ const routes = [
   {
     path: "/",
     text: "Dashboard",
-    component: TODOComponent,
+    component: DashboardPage,
     exact: true
   },
   {

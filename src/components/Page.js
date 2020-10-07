@@ -8,7 +8,6 @@ const MyPage = ({ children, location }) => (
   <Page
     sidebar={<Sidebar routes={routes} />}
     header={<PageHeader />}
-    isManagedSidebar
   >
     <React.Suspense fallback={<PageSection>Loading...</PageSection>}>
       {children}
