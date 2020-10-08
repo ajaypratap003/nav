@@ -52,7 +52,7 @@ export const DashboardPage = () => {
               </CardHeader>
               <CardTitle>
                 <Title headingLevel="h2" size={TitleSizes["xl"]}>
-                  Hybrid Cloud Compute
+                  Unified Management Services
                 </Title>
               </CardTitle>
               <CardBody isFilled={false}>
