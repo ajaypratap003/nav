@@ -1,12 +1,16 @@
 import React from 'react';
-import { PageHeader, Title } from '@patternfly/react-core';
-
+import { Brand, PageHeader, Title } from '@patternfly/react-core';
+import logoUms from '../images/logo-ums-reversed.svg';
+import "@patternfly/patternfly/utilities/Accessibility/accessibility.css";
 
 const MyPageHeader = () => {
   const Logo = (
-    <Title headingLevel="h1" size="xl" style={{ color: 'white' }}>
-      Unified Managed Services
-    </Title>
+    <React.Fragment>
+      <Title headingLevel="h1" className="pf-u-screen-reader">
+        Unified Managed Services
+      </Title>
+      <Brand src={logoUms} alt="Unified Managed Services" style={{width: "150px"}} />
+    </React.Fragment>
   );
 
   return <PageHeader logo={Logo} showNavToggle />
