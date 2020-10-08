@@ -1,7 +1,15 @@
 @import "@patternfly/patternfly/sass-utilities/all.scss";
 
-.pf-c-page__sidebar {
-  // display: none;
+.app-c-page__footer {
+
+}
+
+.pf-c-page__header-brand-link,
+.app-c-page__footer-brand-link {
+  .pf-c-brand {
+    width: #{pf-size-prem(150px)};
+    height: auto;
+  }
 }
 
 .app__landing-card {
