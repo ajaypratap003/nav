@@ -38,7 +38,7 @@ export const DashboardPage = () => {
   return (
     <Page>
       <PageHeader logo={<Brand src={logoRedhatReversed} alt="Red Hat Logo" />} />
-      <PageSection isWidthLimited className="pf-m-center" isFilled={true}>
+      <PageSection isWidthLimited className="pf-m-center" isFilled={true} className="pf-m-center-vertically">
         <Text component="h1" className="pf-u-screen-reader">
           Federated Modules POC
         </Text>
