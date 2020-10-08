@@ -14,13 +14,12 @@ import {
   Page,
   PageHeader,
   PageSection,
-  PageSectionVariants,
   Text,
   Title,
   TitleSizes
 } from '@patternfly/react-core';
 import "./dashboardPage.scss";
-import { ArrowRightIcon } from "@patternfly/react-icons";
+import ArrowRightIcon from "@patternfly/react-icons/dist/js/icons/arrow-right-icon";
 import iconAnsible from './images/icon-ansible.svg';
 import iconCloudCompute from './images/icon-cloud-compute.svg';
 import iconCostManagement from './images/icon-cost-management.svg';
@@ -29,10 +28,7 @@ import iconMigrationServices from './images/icon-migration-services.svg';
 import iconSubscriptionWatch from './images/icon-subscription-watch.svg';
 import logoRedhatReversed from './images/logo-redhat-reversed.svg';
 import logoRedhat from './images/logo-redhat.svg';
-
-const Header = () => {
-  <PageHeader logo={<Brand src={logoRedhatReversed} alt="Red Hat Logo" />} />
-}
+import { Link } from 'react-router-dom';
 
 export const DashboardPage = () => {
   return (
@@ -68,24 +64,24 @@ export const DashboardPage = () => {
               <CardBody>
                 <ul className="app__link-list">
                   <li>
-                    <Button component="a" href="#/services/streams" variant="link" isInline>
+                    <Link to="/services/streams">
                       OpenShift Streams
-                    </Button>
+                    </Link>
                   </li>
                   <li>
-                    <Button component="a" href="#/services/debezium" variant="link" isInline>
-                      Change date capture
-                    </Button>
+                    <Link to="/services/debezium">
+                      Change data capture
+                    </Link>
                   </li>
                   <li>
-                    <Button component="a" href="#/services/kafkaconnect" variant="link" isInline>
+                    <Link to="/services/kafkaconnect">
                       Camel Kafka connect
-                    </Button>
+                    </Link>
                   </li>
                   <li>
-                    <Button component="a" href="#/services/threescale" variant="link" isInline>
+                    <Link to="/services/threescale">
                       OpenShift Cluster Manager
-                    </Button>
+                    </Link>
                   </li>
                 </ul>
               </CardBody>
@@ -128,39 +124,39 @@ export const DashboardPage = () => {
               <CardBody>
                 <ul className="app__link-list pf-m-2-col">
                   <li>
-                    <Button component="a" href="#" variant="link" isInline>
+                    <Link to="">
                       Dashboard
-                    </Button>
+                    </Link>
                   </li>
                   <li>
-                    <Button component="a" href="#" variant="link" isInline>
+                    <Link to="">
                       Patch
-                    </Button>
+                    </Link>
                   </li>
                   <li>
-                    <Button component="a" href="#" variant="link" isInline>
+                    <Link to="">
                       Advisor
-                    </Button>
+                    </Link>
                   </li>
                   <li>
-                    <Button component="a" href="#" variant="link" isInline>
+                    <Link to="">
                       Drift
-                    </Button>
+                    </Link>
                   </li>
                   <li>
-                    <Button component="a" href="#" variant="link" isInline>
+                    <Link to="">
                       Vulterability
-                    </Button>
+                    </Link>
                   </li>
                   <li>
-                    <Button component="a" href="#" variant="link" isInline>
+                    <Link to="">
                       Policies
-                    </Button>
+                    </Link>
                   </li>
                   <li>
-                    <Button component="a" href="#" variant="link" isInline>
+                    <Link to="">
                       Compliance
-                    </Button>
+                    </Link>
                   </li>
                 </ul>
               </CardBody>
@@ -201,19 +197,19 @@ export const DashboardPage = () => {
               <CardBody>
                 <ul className="app__link-list pf-m-auto-col" style={{"--app__link-list--MinMax--min": "18ch"}}>
                   <li>
-                    <Button component="a" href="#" variant="link" isInline>
+                    <Link to="">
                       Automation Analytics
-                    </Button>
+                    </Link>
                   </li>
                   <li>
-                    <Button component="a" href="#" variant="link" isInline>
+                    <Link to="">
                       Automation Hub
-                    </Button>
+                    </Link>
                   </li>
                   <li>
-                    <Button component="a" href="#" variant="link" isInline>
+                    <Link to="">
                       Automation Services Catalog
-                    </Button>
+                    </Link>
                   </li>
                 </ul>
               </CardBody>
@@ -254,9 +250,9 @@ export const DashboardPage = () => {
               <CardBody>
                 <ul className="app__link-list pf-m-auto-col" style={{"--app__link-list--MinMax--min": "22ch"}}>
                   <li>
-                    <Button component="a" href="#" variant="link" isInline>
+                    <Link to="">
                       Cost Management
-                    </Button>
+                    </Link>
                   </li>
                 </ul>
               </CardBody>
@@ -297,9 +293,9 @@ export const DashboardPage = () => {
               <CardBody>
                 <ul className="app__link-list">
                   <li>
-                    <Button component="a" href="#" variant="link" isInline>
+                    <Link to="">
                       Migration Analytics
-                    </Button>
+                    </Link>
                   </li>
                 </ul>
               </CardBody>
@@ -340,14 +336,14 @@ export const DashboardPage = () => {
               <CardBody>
                 <ul className="app__link-list pf-m-auto-col" style={{"--app__link-list--MinMax--min": "18ch"}}>
                   <li>
-                    <Button component="a" href="#" variant="link" isInline>
+                    <Link to="">
                       Red Hat Enterprise Linux
-                    </Button>
+                    </Link>
                   </li>
                   <li>
-                    <Button component="a" href="#" variant="link" isInline>
+                    <Link to="">
                       Red Hat OpenShift
-                    </Button>
+                    </Link>
                   </li>
                 </ul>
               </CardBody>
