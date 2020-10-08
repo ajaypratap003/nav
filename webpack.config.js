@@ -26,6 +26,7 @@ module.exports = (env = { streamsPort: 3001 }, argv) => {
       port
     },
     output: {
+      path: path.resolve('public'),
       publicPath
     },
     module: {
