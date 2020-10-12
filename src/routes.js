@@ -1,4 +1,4 @@
-import { StreamsPage, DebeziumPage } from 'streams/pages';
+import { StreamsPage, DebeziumPage, DebeziumCreatePage } from 'streams/pages';
 import { DashboardPage } from './dashboardPage';
 
 const TODOComponent = () => 'Nothing yet';
@@ -27,6 +27,12 @@ const routes = [
     group: 'services',
     text: "Change data capture",
     component: DebeziumPage
+  },
+  {
+    path: "/services/debezium2",
+    group: 'services',
+    text: "Change data capture 2",
+    component: DebeziumCreatePage
   },
   {
     path: "/services/kafkaconnect",
