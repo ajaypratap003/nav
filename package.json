@@ -1,7 +1,7 @@
 {
   "name": "nav",
   "version": "0.0.0",
-  "port": 8080,
+  "port": 3000,
   "private": true,
   "devDependencies": {
     "@babel/core": "7.11.4",
