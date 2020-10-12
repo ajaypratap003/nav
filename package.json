@@ -26,8 +26,8 @@
     "clean": "rm -rf public",
     "develop": "webpack-dev-server",
     "serve": "node scripts/serve",
-    "nodeshift-deploy": "env NAMESPACE=ums-poc scripts/nodeshift.sh deploy nav",
-    "nodeshift-undeploy": "env NAMESPACE=ums-poc scripts/nodeshift.sh undeploy nav",
+    "nodeshift-deploy": "scripts/nodeshift.sh deploy nav",
+    "nodeshift-undeploy": "scripts/nodeshift.sh undeploy nav",
     "deploy": "node scripts/deploy"
   },
   "dependencies": {
